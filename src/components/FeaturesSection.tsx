@@ -14,7 +14,9 @@ import {
   Sliders,
   ChevronsLeftRight
 } from "lucide-react";
-
+import doctorHero from "@/assets/img 5.webp"; // Dr. Akarsh Niranjan Profile Portrait
+import WhiteTeeth from "@/assets/white.png";
+import YellowTeeth from "@/assets/yellow.png";
 // Treatments mapped directly from Niranjans Dental Care clinical offerings
 const services = [
   {
@@ -75,7 +77,7 @@ const services = [
     tag: "Pediatric Care",
     category: "Pediatric Care",
     featured: true,
-    image : "src/assets/img 5.webp" // Replace with actual image path
+    image : doctorHero // Replace with actual image path
   },
 ];
 
@@ -131,7 +133,7 @@ const BeforeAfterSlider = () => {
       >
         {/* AFTER Image (Background) */}
         <img
-          src="src/assets/white.png" // Replace with actual image path
+          src={WhiteTeeth}
           alt="After Dental Treatment"
           className="absolute inset-0 w-full h-full object-cover pointer-events-none"
         />
@@ -142,7 +144,7 @@ const BeforeAfterSlider = () => {
           style={{ width: `${sliderPos}%` }}
         >
           <img
-            src="src/assets/yellow.png" // Replace with actual image path
+            src={YellowTeeth}
             alt="Before Dental Treatment"
             className="absolute inset-0 w-full h-full object-cover max-w-none"
             style={{ width: containerRef.current ? containerRef.current.offsetWidth : "100%" }}

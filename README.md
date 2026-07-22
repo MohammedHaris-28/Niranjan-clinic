@@ -1,3 +1,3 @@
-# Welcome to your MenuMint project
+# Welcome to Niranjan Dental Clinic Website
 
-TODO: Document your project here
+
